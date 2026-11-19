@@ -47,6 +47,7 @@
       <a href="#cues">Cue</a>
       <a href="#run">节目流程</a>
       <a href="#countdown">开场倒数</a>
+      <a href="#stage">讲台提示屏</a>
       <a href="#check">开场前检查</a>
       <a href="#keys">键盘</a>
       <a href="#help">常见问题</a>
@@ -62,7 +63,7 @@
             <tr><td>给谁用</td><td>自己讲自己投影片的人</td><td>一个人在后面控投影片、音乐和投影</td><td>负责整场活动的人</td></tr>
             <tr><td>翻页、黑屏/白屏、备注、计时、真实缩略图、手机遥控、开场前检查</td><td>有</td><td>有</td><td>有</td></tr>
             <tr><td>音乐和淡入淡出、音响输出、投影模式、Cue</td><td>–</td><td>有</td><td>有</td></tr>
-            <tr><td>节目流程、开场倒数</td><td>–</td><td>–</td><td>有</td></tr>
+            <tr><td>节目流程、开场倒数、讲台提示屏和控台讯息</td><td>–</td><td>–</td><td>有</td></tr>
             <tr><td>第一次要设定的</td><td>打开文件，手机扫码</td><td>再选音乐方式、接投影机</td><td>再排节目流程</td></tr>
           </tbody>
         </table>
@@ -217,10 +218,24 @@
       <p>需要把投影机当作第二个屏幕，设成<b>扩展（Extend）</b>。只有一个屏幕时，倒数会以普通窗口显示在电脑上，方便检查，但不会盖住主控台。</p>
     </section>
 
+    <section id="stage">
+      <h2>讲台提示屏和控台讯息 <span class="tag">Extra</span></h2>
+      <p>把手机或平板放在讲台上，讲员或主持人就能看到投影上的这一页、下一页、放大的备注和剩余时间，还有你从控台发过去的讯息，例如“还有 5 分钟”。</p>
+      <figure><img src="img/stage.png" alt="平板上的讲台提示屏：讯息 Please wrap up、投影上的这一页、下一页和备注" loading="lazy"><figcaption>讲员已经看到讯息的提示屏。</figcaption></figure>
+      <ul>
+        <li><b>连接</b>：在控台点 <b>Remote → Stage display</b>，用讲员的手机或平板扫码。或者打开显示的网址，输入<b>提示屏 PIN</b>（和控台的 PIN 不同）。</li>
+        <li><b>只能看</b>：提示屏不能翻页、不能控制音乐，也打不开控台，所以可以放心交给任何人。可以同时开好几个（讲员、主持人、乐手）。</li>
+        <li>顶部显示节目流程的这一段和剩余时间（超时变琥珀色，超过 2 分钟变红色），或这一段已经进行多久；还有现在的时间。<b>Awake</b> 让屏幕保持亮着，<b>Full</b> 隐藏浏览器的工具栏。连线中断时会用大字显示 <i>Not connected</i>，并自动重连。</li>
+        <li><b>发讯息</b>：点控台右上角的 <b>Stage</b>。按一下现成的讯息（可以修改），或自己输入一句。讯息会先在提示屏上全屏闪出，之后留在顶部，直到你清除。讲员点一下，控台上就显示 <b>Seen</b>。实测讯息大约 0.1 秒就出现。</li>
+        <li>勾选 <b>The speaker can change slides</b>，提示屏会出现 Prev 和 Next 按钮（默认关闭）。</li>
+      </ul>
+      <p>提示屏需要 Wi-Fi：场地的、OneDesk 自己的（Windows）或手机热点（Mac）。蓝牙太慢，传不了画面。</p>
+    </section>
+
     <section id="check">
       <h2>开场前检查</h2>
       <figure><img src="img/check.png" alt="开场前检查" loading="lazy"></figure>
-      <p>右上角的 <b>Check</b> 列出 OneDesk 能检查的项目：投影片、缩略图、慢文字、节目流程和它的文件、投影机、演示者视图、声音、音乐、Cue，以及已连接的手机。琥珀色或红色的要看一下，很多项目旁边就有修正的按钮。它没办法检查的，是投影机和喇叭实际上显示和播放出来的效果：观众到场前，请看一下投影，放几秒音乐试试。</p>
+      <p>右上角的 <b>Check</b> 列出 OneDesk 能检查的项目：投影片、缩略图、慢文字、节目流程和它的文件、投影机、演示者视图、声音、音乐、Cue、已连接的手机和提示屏。琥珀色或红色的要看一下，很多项目旁边就有修正的按钮。它没办法检查的，是投影机和喇叭实际上显示和播放出来的效果：观众到场前，请看一下投影，放几秒音乐试试。</p>
     </section>
 
     <section id="keys">
@@ -268,7 +283,7 @@
   </main>
 
   <footer>
-    <span class="dim">OneDesk · Lite、Standard、Extra · Beta 1.0</span>
+    <span class="dim">OneDesk · Lite 和 Standard Beta 1.0 · Extra Beta 1.1</span>
     <span><a href="../">下载</a> · <a href="https://github.com/ngxu/onedesk/releases">所有版本</a></span>
   </footer>
 </body>

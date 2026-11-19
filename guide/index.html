@@ -44,6 +44,7 @@
       <a href="#cues">Cues</a>
       <a href="#run">Run of show</a>
       <a href="#countdown">Countdown</a>
+      <a href="#stage">Stage display</a>
       <a href="#check">Before the event</a>
       <a href="#keys">Keyboard</a>
       <a href="#help">Troubleshooting</a>
@@ -59,7 +60,7 @@
             <tr><td>For</td><td>Presenting your own slides</td><td>One person running slides, music and the projector</td><td>Whoever runs the whole event</td></tr>
             <tr><td>Slides, black/white, notes, timers, real slide pictures, phone remote, pre-event check</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
             <tr><td>Music and fades, sound output, projector mode, cues</td><td>–</td><td>Yes</td><td>Yes</td></tr>
-            <tr><td>Run of show, opening countdown</td><td>–</td><td>–</td><td>Yes</td></tr>
+            <tr><td>Run of show, opening countdown, stage display and messages</td><td>–</td><td>–</td><td>Yes</td></tr>
             <tr><td>First-time setup</td><td>Open the file, scan the code</td><td>+ choose the music mode, connect the projector</td><td>+ plan the run of show</td></tr>
           </tbody>
         </table>
@@ -214,10 +215,24 @@
       <p>It needs the projector as a second screen in <b>Extend</b> mode. With one screen, the countdown opens as a window on the computer instead, so you can check it without covering the console.</p>
     </section>
 
+    <section id="stage">
+      <h2>Stage display and messages <span class="tag">Extra</span></h2>
+      <p>A phone or tablet on the lectern shows the speaker or host the slide on the projector, the next one, the notes in large type and the time left, and any message you send from the console, such as <i>5 minutes left</i>.</p>
+      <figure><img src="img/stage.png" alt="The stage display on a tablet: the message Please wrap up, the slide on screen, the next slide and the notes" loading="lazy"><figcaption>The stage display with a message the speaker has seen.</figcaption></figure>
+      <ul>
+        <li><b>Connect</b>: in the console, <b>Remote → Stage display</b>, and scan the code with the speaker's phone or tablet. Or open the address shown and enter the <b>stage PIN</b>, which is different from the console's PIN.</li>
+        <li><b>View only</b>: the stage display can't change slides, play music or open the console, so you can hand it to anyone. Several can be open at once (speaker, host, musicians).</li>
+        <li>The top shows the run of show's part and its time left (amber when over, red after two minutes), or how long this part has run; and the time of day. <b>Awake</b> keeps the screen on; <b>Full</b> hides the browser bars. If the link drops, it says <i>Not connected</i> in large letters and reconnects by itself.</li>
+        <li><b>Messages</b>: click <b>Stage</b> at the top right of the console. Send a ready-made message (you can change the list) or type your own. It flashes full screen on the stage display, then stays at the top until you clear it. When the speaker taps it, the console shows <b>Seen</b>. In testing a message appeared in about a tenth of a second.</li>
+        <li>Tick <b>The speaker can change slides</b> to give the stage display Prev and Next buttons (off by default).</li>
+      </ul>
+      <p>The stage display needs Wi-Fi: the venue's, OneDesk's own (Windows) or the phone's hotspot (Mac). Bluetooth is too slow for pictures.</p>
+    </section>
+
     <section id="check">
       <h2>Before the event</h2>
       <figure><img src="img/check.png" alt="The pre-event check" loading="lazy"></figure>
-      <p><b>Check</b> (top right) lists what OneDesk can verify: the presentation, slide pictures, slow text, the run of show and its files, the projector, presenter view, sound, music, cues and connected phones. Amber or red needs a look, often with a button that fixes it. What it can't check is what the projector and speakers really show and play: look at the screen and play a few seconds of music before people arrive.</p>
+      <p><b>Check</b> (top right) lists what OneDesk can verify: the presentation, slide pictures, slow text, the run of show and its files, the projector, presenter view, sound, music, cues, connected phones and stage displays. Amber or red needs a look, often with a button that fixes it. What it can't check is what the projector and speakers really show and play: look at the screen and play a few seconds of music before people arrive.</p>
     </section>
 
     <section id="keys">
@@ -265,7 +280,7 @@
   </main>
 
   <footer>
-    <span class="dim">OneDesk · Lite, Standard, Extra · Beta 1.0</span>
+    <span class="dim">OneDesk · Lite and Standard Beta 1.0 · Extra Beta 1.1</span>
     <span><a href="../">Download</a> · <a href="https://github.com/ngxu/onedesk/releases">All versions</a></span>
   </footer>
 </body>
