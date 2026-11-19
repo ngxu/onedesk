@@ -57,8 +57,17 @@ footer a { color: var(--text); }
   .cards { grid-template-columns: 1fr; }
 }
 
+/* ---------- language: one at a time (lang.js sets the class on <html>) ---------- */
+html.lang-zh .en, html.lang-en .zh { display: none !important; }
+.langbtn {
+  font: 700 12px var(--sans); text-transform: none; letter-spacing: .02em; color: var(--text); cursor: pointer;
+  padding: 7px 12px; margin-left: 6px; background: var(--raise); border: 1px solid var(--line-hi); border-radius: 3px;
+}
+.langbtn:hover { background: var(--raise-hi); }
+
 /* ---------- top navigation (download page and guide) ---------- */
 .top { flex-wrap: wrap; }
+.top > div { flex: 1 1 220px; min-width: 0; } /* the title stays beside the icon on a phone */
 .topnav { margin-left: auto; display: flex; gap: 4px; }
 .topnav a {
   color: var(--dim); text-decoration: none; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .08em;
@@ -75,6 +84,7 @@ footer a { color: var(--text); }
 .hero { display: grid; grid-template-columns: 1.4fr 1fr; gap: 22px; align-items: center; margin-bottom: 22px; }
 .hero video { width: 100%; aspect-ratio: 16 / 9; background: #000; border: 1px solid var(--line-hi); display: block; }
 .hero p { margin: 0 0 12px; }
+.hero p.small { font-size: 12.5px; margin: 6px 0 0; }
 .lead { font-size: 16.5px; }
 .toc { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 0 16px; border-bottom: 1px solid var(--line); margin-bottom: 8px; position: sticky; top: 0; background: var(--bg); z-index: 2; }
 .toc a { color: var(--text); text-decoration: none; font-size: 13px; padding: 4px 9px; border: 1px solid var(--line-hi); border-radius: 3px; background: var(--surface); }
@@ -112,6 +122,11 @@ footer a { color: var(--text); }
 @media (max-width: 860px) {
   .hero, .cols, .cols.media-right { grid-template-columns: 1fr; }
   .legend { columns: 1; }
+  /* contents: one row that scrolls sideways, so it doesn't cover the page */
+  .toc { flex-wrap: nowrap; overflow-x: auto; scrollbar-width: none; padding: 10px 0; }
+  .toc::-webkit-scrollbar { display: none; }
+  .toc a { flex: none; }
+  .guide section { scroll-margin-top: 58px; }
   .guide figure.phone { max-width: 300px; }
   .pin { min-width: 20px; height: 20px; font-size: 11px; box-shadow: 0 0 0 2px rgba(11, 12, 13, .85); }
 }
