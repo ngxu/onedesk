@@ -1,8 +1,9 @@
-# OneDesk
+# OneDesk is now Stagio
 
-One person runs PowerPoint, music (Spotify) and the projector from one console; phones and tablets are the remote.
-Three editions: **Lite** (presenting your own slides), **Standard** (slides, music and the projector) and **Extra** (Standard plus a run of show and an opening countdown).
+OneDesk was renamed **Stagio** and is now open source.
 
-**Download: https://ngxu.github.io/onedesk/** (Windows installers, Mac test versions, phone instructions)
+- Download and guide: https://ngxu.github.io/stagio/
+- Source code: https://github.com/ngxu/stagio
 
-This repository only hosts the download page, the Bluetooth remote page (`remote/`) and the release files. The release named `downloads` always holds each edition's newest files under fixed names, so the download links never change.
+This repository only keeps the old addresses working: its pages forward to the new site, and
+`remote/` is still the Bluetooth remote page that OneDesk installs open.
